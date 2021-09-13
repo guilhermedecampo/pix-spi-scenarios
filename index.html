@@ -3,7 +3,7 @@
     <title>Cenários SPI - Cenários de mensagens transacionadas pelo SPI/PIX</title>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>
-            mermaid.initialize({ startOnLoad: true });
+      mermaid.initialize({ startOnLoad: true });
     </script>
     <style>
       body {
@@ -30,7 +30,70 @@
         margin-left: auto;
         margin-right: auto;
       }
-
+      /* Accordion styles */
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+      /* Accordion styles */
+      .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+      }
+      .tab {
+        width: 100%;
+        color: white;
+        overflow: hidden;
+      }
+      .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #2c3e50;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */
+      }
+      .tab-label:hover {
+        background: #1a252f;
+      }
+      .tab-label::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all 0.35s;
+      }
+      .tab-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: #2c3e50;
+        background: white;
+        transition: all 0.35s;
+      }
+      .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: #2c3e50;
+        cursor: pointer;
+      }
+      .tab-close:hover {
+        background: #1a252f;
+      }
+      input:checked + .tab-label {
+        background: #1a252f;
+      }
+      input:checked + .tab-label::after {
+        transform: rotate(90deg);
+      }
+      input:checked ~ .tab-content {
+        max-height: 1000000vh;
+        padding: 1em;
+      }
     </style>
     <h1>Cenários Pix - SPI</h1>
     <p>Todos os possíveis cenários de sucesso e erros nos fluxos de mensagens transacionadas no SPI</p>
@@ -42,7 +105,7 @@
       <li>Caso encontre alguma informação incorreta, nos ajude criando uma pull request (PR), solicitação de alteração, no GitHub. <a href="https://github.com/guilhermedecampo/pix-spi-scenarios/edit/main/index.html">Clique aqui</a>; </li>
       <li>Acessar o catálogo de serviços do sistema financeiro nacional (SFN) para verificar as informações do BACEN. <a href="https://www.bcb.gov.br/estabilidadefinanceira/comunicacaodados">Clique aqui</a>.</li>
     </ul>
-    <h2>[Fluxo pagador] Sucesso - Manual</h2>
+    <h2>Fluxo Sucesso - Manual</h2>
     <p>Dados do usuário  conhecidos</p>
     <h3>Diagram</h3>
     <div class="mermaid">
@@ -61,13 +124,36 @@
         Participante Recebedor-->>Usuário Recebedor: Envia confirmação de sucesso
     </div>
     <h3>Mensagens</h3>
-    <h4>PACS.008 - MANUAL</h4>
-    <script src="https://gist.github.com/guilhermedecampo/fada6c2e57836d5b0881ab0a28ec1712.js"></script>
-    <h4>PACS.002 - Confirmação do PARTICIPANTE RECEBEDOR para SPI</h4>
-    <script src="https://gist.github.com/guilhermedecampo/869e5b64484747f1d013fb16f331c027.js"></script>
-    <h4>PACS.002 - Confirmação do SPI para PARTICIPANTE RECEBEDOR</h4>
-    <script src="https://gist.github.com/guilhermedecampo/f5c02fc4bd064ddb794a8b385629d949.js"></script>
-    <h4>PACS.002 - Confirmação do SPI para PARTICIPANTE PAGADOR</h4>
-    <script src="https://gist.github.com/guilhermedecampo/39029ff5b9e6662a9c0b16333010ecad.js"></script>
+    <!-- thanks for the tabs example: https://codepen.io/raubaca/pen/PZzpVe -->
+    <div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1">PACS.008 - MANUAL</label>
+        <div class="tab-content">
+          <script src="https://gist.github.com/guilhermedecampo/fada6c2e57836d5b0881ab0a28ec1712.js"></script>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2">PACS.002 - Confirmação do PARTICIPANTE RECEBEDOR para SPI</label>
+        <div class="tab-content">
+          <script src="https://gist.github.com/guilhermedecampo/869e5b64484747f1d013fb16f331c027.js"></script>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck3">
+        <label class="tab-label" for="chck3">PACS.002 - Confirmação do SPI para PARTICIPANTE RECEBEDOR</label>
+        <div class="tab-content">
+          <script src="https://gist.github.com/guilhermedecampo/f5c02fc4bd064ddb794a8b385629d949.js"></script>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck4">
+        <label class="tab-label" for="chck4">PACS.002 - Confirmação do SPI para PARTICIPANTE PAGADOR</label>
+        <div class="tab-content">
+          <script src="https://gist.github.com/guilhermedecampo/39029ff5b9e6662a9c0b16333010ecad.js"></script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

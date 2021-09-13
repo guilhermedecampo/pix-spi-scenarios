@@ -1,27 +1,73 @@
 <html>
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-        <script>
+  <body>
+    <title>Cenários SPI - Cenários de mensagens transacionadas pelo SPI/PIX</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
             mermaid.initialize({ startOnLoad: true });
-        </script>
+    </script>
+    <style>
+      body {
+        font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #565867;
+        font-weight: 400;
+        background: #f3f5f7;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        -moz-osx-font-smoothing: grayscale;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;  
+        max-width: 100%;
+        width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-        <h1>Here is one mermaid diagram:</h1>
-        <div class="mermaid">
-            sequenceDiagram
-                autonumber
-                Alice->>John: Hello John, how are you?
-                loop Healthcheck
-                    John->>John: Fight against hypochondria
-                end
-                Note right of John: Rational thoughts!
-                John-->>Alice: Great!
-                John->>Bob: How about you?
-                Bob-->>John: Jolly good!
-        </div>
-        <h1>Here is another mermaid diagram:</h1>
-        <div class="mermaid">
-            graph TD A[Client] -->|tcp_123| B(Load Balancer) B -->|tcp_456| C[Server1] B
-            -->|tcp_456| D[Server2]
-        </div>
-    </body>
+    </style>
+    <h1>Cenários Pix - SPI</h1>
+    <p>Todos os possíveis cenários de sucesso e erros nos fluxos de mensagens transacionadas no SPI</p>
+    <h2>Por que?</h2>
+    <p>Esse projeto tem como objetivo documentar todos os possíveis cenários de sucesso e erros nos fluxos de mensagens transacionadas no SPI. Existem muitas dúvidas ao integrar o sistema do zero e esse material é um reforço em conjunto das casas integrantes para que o ecossistema fique cada dia mais inclusivo e sólido.</p>
+    <h2>Informações importantes</h2>
+    <ul>
+      <li>As informações aqui contidas podem estar desatualizadas, faça testes e use por sua conta e risco;</li>
+      <li>Caso encontre alguma informação incorreta, nos ajude criando uma pull request (PR), solicitação de alteração, no GitHub. <a href="https://github.com/guilhermedecampo/pix-spi-scenarios/edit/main/index.html">Clique aqui</a>; </li>
+      <li>Acessar o catálogo de serviços do sistema financeiro nacional (SFN) para verificar as informações do BACEN. <a href="https://www.bcb.gov.br/estabilidadefinanceira/comunicacaodados">Clique aqui</a>.</li>
+    </ul>
+    <h2>[Fluxo pagador] Sucesso - Manual</h2>
+    <p>Dados do usuário  conhecidos</p>
+    <h3>Diagram</h3>
+    <div class="mermaid">
+      sequenceDiagram
+        autonumber
+        Usuário Pagador->>Participante Pagador: Envia dados completos do pagamento
+        Participante Pagador->>SPI: Verifica prioridade, Bloqueia saldos e envia PACS.008
+        SPI->>Participante Recebedor: Bloqueia saldos e envia PACS.008
+        Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002
+        par Paralelo
+          SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002
+        and
+          SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002
+        end
+        Participante Pagador-->>Usuário Pagador: Envia confirmação de sucesso
+        Participante Recebedor-->>Usuário Recebedor: Envia confirmação de sucesso
+    </div>
+    <h3>Mensagens</h3>
+    <h4>PACS.008 - MANUAL</h4>
+    <script src="https://gist.github.com/guilhermedecampo/fada6c2e57836d5b0881ab0a28ec1712.js"></script>
+    <h4>PACS.002 - Confirmação do PARTICIPANTE RECEBEDOR para SPI</h4>
+    <script src="https://gist.github.com/guilhermedecampo/869e5b64484747f1d013fb16f331c027.js"></script>
+    <h4>PACS.002 - Confirmação do SPI para PARTICIPANTE RECEBEDOR</h4>
+    <script src="https://gist.github.com/guilhermedecampo/f5c02fc4bd064ddb794a8b385629d949.js"></script>
+    <h4>PACS.002 - Confirmação do SPI para PARTICIPANTE PAGADOR</h4>
+    <script src="https://gist.github.com/guilhermedecampo/39029ff5b9e6662a9c0b16333010ecad.js"></script>
+  </body>
 </html>

@@ -114,11 +114,11 @@
         Usuário Pagador->>Participante Pagador: Envia dados completos do pagamento
         Participante Pagador->>SPI: Verifica prioridade, Bloqueia saldos e envia PACS.008
         SPI->>Participante Recebedor: Bloqueia saldos e envia PACS.008
-        Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002
+        Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002(ACCC)
         par Paralelo
-          SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002
+          SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002(ACSP)
         and
-          SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002
+          SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002(ACSC)
         end
         Participante Pagador-->>Usuário Pagador: Envia confirmação de sucesso
         Participante Recebedor-->>Usuário Recebedor: Envia confirmação de sucesso

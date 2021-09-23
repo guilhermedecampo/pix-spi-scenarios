@@ -1,18 +1,18 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro DS27 - Rejeição de iniciação por erro ISPB inexistente
 
-Liquidação interrompida por timeout no SPI
+Participante não está cadastrado no SPI
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AB03;
-- **Descrição do Erro:** Liquidação da transação interrompida devido a timeout no SPI.
+- **Código do Erro:** DS27;
+- **Descrição do Erro:** Participante não se encontra cadastrado ou ainda não iniciou a operação no SPI.
 - **Quem gera o erro:** SPI
-- **Enviada para:** Pagador ou Recebedor
+- **Enviada para:** Pagador
 
 ### PACS.002
 
@@ -63,13 +63,12 @@ Liquidação interrompida por timeout no SPI
         <OrgnlEndToEndId>E0000000000000000000000000000000</OrgnlEndToEndId>
         <!-- RJCT - Instrução de pagamento/devolução rejeitada pelo SPI / participante do usuário recebedor por erro de negócio  -->
         <TxSts>RJCT</TxSts>
-        <StsRsnInf>	
+        <StsRsnInf>
           <Rsn>
-            <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>DS27</Cd>
           </Rsn>
-          <AddtlInf>"mensagem de erro"</AddtlInf>
-        </StsRsnInf>	
+          <AddtlInf>ISPB do participante recebedor inexistente</AddtlInf>
+        </StsRsnInf>
       </TxInfAndSts>
     </FIToFIPmtStsRpt>
   </Document>

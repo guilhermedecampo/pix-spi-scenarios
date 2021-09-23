@@ -4,13 +4,39 @@ Esse repositório tem como objetivo documentar todos os possíveis cenários de 
 
 ## SPI/PIX ⚡️
 
-SPI é o sistema de pagamentos instantâneos no qual os participantes do Pix liquidam transações. Ele é basicamente um sistema de mensageria centralizado e gerenciado pelo BACEN. Todas as mensagens transacionadas seguem a ISO20022 e aqui vamos tratar das mensagens PACS.008, PACS.002, PACS.004 e ADMI.002.
+SPI é o sistema de pagamentos instantâneos no qual os participantes do Pix liquidam transações. Ele é basicamente um sistema de mensageria centralizado e gerenciado pelo BACEN. Todas as mensagens transacionadas seguem a ISO20022 e aqui vamos tratar das mensagens PACS.008, PACS.002, PACS.004, ADMI.002 e demais.
 
 ## Configurações ⚙️
 
-Pensando na facilidade de manutenção e colaboração utilizamos o projeto mermaid.js para o diagrama de sequência e descrição dos fluxos direto no html.
+Pensando na facilidade de manutenção e colaboração utilizamos o projeto mermaid.js para o diagrama de sequência.
 
 
 ## Colaboração 💡
 
 Você é muito bem vindo a colaborar! Crie issues com suas dúvidas ou melhorias e pull requests com modificações ou novos fluxos. 
+
+## Website
+
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+### Installation
+
+```
+$ yarn
+```
+
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.

@@ -23,14 +23,14 @@ module.exports = {
           sidebarCollapsed: false,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/guilhermedecampo/pix-spi-scenarios/edit/main/',
           remarkPlugins: [require('mdx-mermaid')],
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl: 'https://github.com/guilhermedecampo/pix-spi-scenarios/edit/main/blog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

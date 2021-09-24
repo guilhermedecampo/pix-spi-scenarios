@@ -4,13 +4,12 @@ sidebar_position: 1
 
 # Erro AB03 - Rejeição de iniciação por timeout
 
-Liquidação interrompida por timeout no SPI
+Liquidação de transação interrompida por timeout no SPI
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
 - **Código do Erro:** AB03;
-- **Descrição do Erro:** Liquidação da transação interrompida devido a timeout no SPI.
 - **Quem gera o erro:** SPI
 - **Enviada para:** Pagador ou Recebedor
 

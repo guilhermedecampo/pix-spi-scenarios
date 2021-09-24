@@ -1,17 +1,18 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# Erro DS27 - Rejeição de iniciação por erro ISPB inexistente
+# Erro AC07 - Rejeição de iniciação por conta encerrada
 
-Participante não está cadastrado ou ainda não iniciou operação no SPI
+Transação interrompida por erro de conta encerrada.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS27;
-- **Quem gera o erro:** SPI
-- **Enviada para:** Pagador
+- **Código do Erro:** AC07;
+- **Quem gera o erro:** Recebedor
+- **Enviada para:** SPI
+- **Processada por 
 
 ### PACS.002
 
@@ -62,12 +63,13 @@ Participante não está cadastrado ou ainda não iniciou operação no SPI
         <OrgnlEndToEndId>E0000000000000000000000000000000</OrgnlEndToEndId>
         <!-- RJCT - Instrução de pagamento/devolução rejeitada pelo SPI / participante do usuário recebedor por erro de negócio  -->
         <TxSts>RJCT</TxSts>
-        <StsRsnInf>
+        <StsRsnInf>	
           <Rsn>
-            <Cd>DS27</Cd>
+            <!-- Razão do erro -->
+            <Cd>AC07</Cd>
           </Rsn>
-          <AddtlInf>ISPB do participante recebedor inexistente</AddtlInf>
-        </StsRsnInf>
+          <AddtlInf>"mensagem de erro"</AddtlInf>
+        </StsRsnInf>	
       </TxInfAndSts>
     </FIToFIPmtStsRpt>
   </Document>

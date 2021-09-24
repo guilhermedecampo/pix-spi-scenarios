@@ -1,17 +1,17 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Erro DS27 - Rejeição de iniciação por erro ISPB inexistente
+# Erro AB11 - Rejeição de iniciação por timeout no pagador
 
-Participante não está cadastrado ou ainda não iniciou operação no SPI
+Transação interrompida por erro de timeout no participante pagador. Esse timeout pode ocorrer quando o recebedor estiver enviando uma PACS.004 com valor para ser devolvido.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS27;
+- **Código do Erro:** AB11;
 - **Quem gera o erro:** SPI
-- **Enviada para:** Pagador
+- **Enviada para:** Recebedor
 
 ### PACS.002
 
@@ -62,12 +62,13 @@ Participante não está cadastrado ou ainda não iniciou operação no SPI
         <OrgnlEndToEndId>E0000000000000000000000000000000</OrgnlEndToEndId>
         <!-- RJCT - Instrução de pagamento/devolução rejeitada pelo SPI / participante do usuário recebedor por erro de negócio  -->
         <TxSts>RJCT</TxSts>
-        <StsRsnInf>
+        <StsRsnInf>	
           <Rsn>
-            <Cd>DS27</Cd>
+            <!-- Razão do erro -->
+            <Cd>AB11</Cd>
           </Rsn>
-          <AddtlInf>ISPB do participante recebedor inexistente</AddtlInf>
-        </StsRsnInf>
+          <AddtlInf>"mensagem de erro"</AddtlInf>
+        </StsRsnInf>	
       </TxInfAndSts>
     </FIToFIPmtStsRpt>
   </Document>

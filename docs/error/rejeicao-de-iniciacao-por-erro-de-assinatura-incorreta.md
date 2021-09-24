@@ -1,17 +1,18 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# Erro DS27 - Rejeição de iniciação por erro ISPB inexistente
+# Erro DS0G - Rejeição de iniciação por assinatura incorreta
 
-Participante não está cadastrado ou ainda não iniciou operação no SPI
+Transação interrompida por erro do participante que assinou a mensagem não é autorizado a realizar a operação na conta PI debitada. No caso em que o participante que assinou a mensagem não é o titular da conta PI debitada nem é o liquidante no SPI do participante do usuário pagador..
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS27;
-- **Quem gera o erro:** SPI
-- **Enviada para:** Pagador
+- **Código do Erro:** DS0G;
+- **Quem gera o erro:** Recebedor
+- **Enviada para:** SPI
+- **Processada por 
 
 ### PACS.002
 
@@ -62,12 +63,13 @@ Participante não está cadastrado ou ainda não iniciou operação no SPI
         <OrgnlEndToEndId>E0000000000000000000000000000000</OrgnlEndToEndId>
         <!-- RJCT - Instrução de pagamento/devolução rejeitada pelo SPI / participante do usuário recebedor por erro de negócio  -->
         <TxSts>RJCT</TxSts>
-        <StsRsnInf>
+        <StsRsnInf>	
           <Rsn>
-            <Cd>DS27</Cd>
+            <!-- Razão do erro -->
+            <Cd>DS0G</Cd>
           </Rsn>
-          <AddtlInf>ISPB do participante recebedor inexistente</AddtlInf>
-        </StsRsnInf>
+          <AddtlInf>"mensagem de erro"</AddtlInf>
+        </StsRsnInf>	
       </TxInfAndSts>
     </FIToFIPmtStsRpt>
   </Document>

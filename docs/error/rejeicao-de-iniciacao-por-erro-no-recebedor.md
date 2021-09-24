@@ -10,7 +10,6 @@ Transação interrompida por erro no participante recebedor
 
 - **Mensagem utilizada:** PACS.002;
 - **Código do Erro:** AB09;
-- **Descrição do Erro:** Transação interrompida devido a erro no participante recebedor.
 - **Quem gera o erro:** SPI
 - **Enviada para:** Pagador
 

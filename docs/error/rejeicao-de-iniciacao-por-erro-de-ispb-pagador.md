@@ -1,17 +1,18 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# Erro DS27 - Rejeição de iniciação por erro ISPB inexistente
+# Erro RC09 - Rejeição de iniciação por ISPB do pagador inválido ou inexistente
 
-Participante não está cadastrado ou ainda não iniciou operação no SPI
+Transação interrompida por erro de ISPB do pagador inválido ou inexistente.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS27;
-- **Quem gera o erro:** SPI
-- **Enviada para:** Pagador
+- **Código do Erro:** RC09;
+- **Quem gera o erro:** Recebedor
+- **Enviada para:** SPI
+- **Processada por 
 
 ### PACS.002
 
@@ -62,12 +63,13 @@ Participante não está cadastrado ou ainda não iniciou operação no SPI
         <OrgnlEndToEndId>E0000000000000000000000000000000</OrgnlEndToEndId>
         <!-- RJCT - Instrução de pagamento/devolução rejeitada pelo SPI / participante do usuário recebedor por erro de negócio  -->
         <TxSts>RJCT</TxSts>
-        <StsRsnInf>
+        <StsRsnInf>	
           <Rsn>
-            <Cd>DS27</Cd>
+            <!-- Razão do erro -->
+            <Cd>RC09</Cd>
           </Rsn>
-          <AddtlInf>ISPB do participante recebedor inexistente</AddtlInf>
-        </StsRsnInf>
+          <AddtlInf>"mensagem de erro"</AddtlInf>
+        </StsRsnInf>	
       </TxInfAndSts>
     </FIToFIPmtStsRpt>
   </Document>

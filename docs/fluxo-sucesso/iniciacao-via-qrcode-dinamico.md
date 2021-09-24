@@ -14,7 +14,9 @@ Para gerar um QR Code dinâmico é necessário vincular uma chave a esse QR Code
 ## Etapas
 
 - **Usuário Pagador->>Participante Pagador:** Envia EMV (Via leitura de QR Code ou Pix Copia e Cola)
-- **Participante Pagador->>SPI:** Decodifica EMV, Verifica prioridade, Bloqueia saldos e envia PACS.008
+- **Participante Pagador->>DICT:** Decodifica EMV, Busca dados da conta
+- **DICT-->>Participante Pagador:** Retorna dados da chave para análise e criação da mensagem
+- **Participante Pagador->>SPI:** Verifica prioridade, Bloqueia saldos e envia PACS.008
 - **SPI->>Participante Recebedor:** Bloqueia saldos e envia PACS.008
 - **Participante Recebedor-->>SPI:** Valida conta, anota crédito e envia PACS.002(ACCC)
 - **Paralelo - SPI-->>Participante Recebedor:** Ajusta saldo e envia PACS.002(ACSP) 
@@ -28,7 +30,9 @@ Para gerar um QR Code dinâmico é necessário vincular uma chave a esse QR Code
 sequenceDiagram
   autonumber
   Usuário Pagador->>Participante Pagador: Envia EMV (Via leitura de QR Code ou Pix Copia e Cola)
-  Participante Pagador->>SPI: Decodifica EMV, Verifica prioridade, Bloqueia saldos e envia PACS.008
+  Participante Pagador->>DICT: Decodifica EMV, Busca dados da conta
+  DICT -->>Participante Pagador: Retorna dados da chave para análise e criação da mensagem
+  Participante Pagador->>SPI: Verifica prioridade, Bloqueia saldos e envia PACS.008
   SPI->>Participante Recebedor: Bloqueia saldos e envia PACS.008
   Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002(ACCC)
   par Paralelo

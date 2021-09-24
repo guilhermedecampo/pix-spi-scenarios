@@ -4,7 +4,7 @@ sidebar_position: 31
 
 # Erro FF07 - Rejeição de iniciação por inconsistência finalidade e preenchimento do bloco structured
 
-Transação interrompida por erro de Inconsistência entre a finalidade da transação e o preenchimento do bloco elementos Structured <Strd>.
+Transação interrompida por erro de Inconsistência entre a finalidade da transação e o preenchimento do bloco elementos Structured.
 
 ## Regras
 

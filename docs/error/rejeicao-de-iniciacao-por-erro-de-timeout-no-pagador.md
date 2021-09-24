@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro AB11 - Rejeição de iniciação por timeout no pagador
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro de timeout no participante pagador. Esse timeout pode ocorrer quando o recebedor estiver enviando uma PACS.004 com valor para ser devolvido.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
+- **Código do Erro:** AB11
 - **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Processada por:** Recebedor
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>AB11</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

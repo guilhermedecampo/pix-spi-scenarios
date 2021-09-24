@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 22
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro CH11 - Rejeição de iniciação por CPF/CNPJ incorreto
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro de CPF/CNPJ incorreto do usuário recebedor.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
-- **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Código do Erro:** CH11
+- **Quem gera o erro:** Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>CH11</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

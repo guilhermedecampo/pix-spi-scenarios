@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 20
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro BE15 - Rejeição de iniciação por código de situação de pagamento ou erro inválido
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro de código de situação de pagamento ou erro inválido. Referente ao iniciador de pagamento. 
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
+- **Código do Erro:** BE15
 - **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>BE15</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

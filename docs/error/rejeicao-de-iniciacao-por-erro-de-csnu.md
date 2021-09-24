@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 35
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro RR04 - Rejeição de iniciação por sanção do usuário pagador
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro de Ordem de pagamento em que o usuário pagador é sancionado por resolução do Conselho de Segurança das Nações Unidas (CSNU). Nos casos em que o usuário recebedor for o sancionado, a ordem de pagamento não deve ser rejeitada.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
-- **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Código do Erro:** RR04
+- **Quem gera o erro:** Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>RR04</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

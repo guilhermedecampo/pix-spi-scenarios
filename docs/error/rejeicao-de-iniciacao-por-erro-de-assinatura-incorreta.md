@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 25
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro DS0G - Rejeição de iniciação por assinatura incorreta
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro do participante que assinou a mensagem não é autorizado a realizar a operação na conta PI debitada. No caso em que o participante que assinou a mensagem não é o titular da conta PI debitada nem é o liquidante no SPI do participante do usuário pagador..
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
+- **Código do Erro:** DS0G
 - **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>DS0G</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

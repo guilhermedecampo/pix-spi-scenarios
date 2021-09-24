@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 18
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro BE01 - Rejeição de iniciação por inconsistência entre CPF/CNPJ e conta transacional especificada
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro de inconsistência entre conta transacional e identificador CPF/CNPJ
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
-- **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Código do Erro:** BE01
+- **Quem gera o erro:** Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>BE01</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

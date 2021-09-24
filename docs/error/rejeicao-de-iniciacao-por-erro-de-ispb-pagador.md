@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 33
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro RC09 - Rejeição de iniciação por ISPB do pagador inválido ou inexistente
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro de ISPB do pagador inválido ou inexistente.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
+- **Código do Erro:** RC09
 - **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>RC09</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 17
 ---
 
-# Erro AB03 - Rejeição de iniciação por timeout
+# Erro AM18 - Rejeição de iniciação por quantidade de transações inválidas
 
-Liquidação de transação interrompida por timeout no SPI
+Transação interrompida por erro quantidade de transações por mensagem. Cada mensagem deve ter entre 1 a 10 transações
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002
-- **Código do Erro:** AB03
+- **Código do Erro:** AM18
 - **Quem gera o erro:** SPI
-- **Processada por:** Pagador ou Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -65,7 +65,7 @@ Liquidação de transação interrompida por timeout no SPI
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AB03</Cd>
+            <Cd>AM18</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

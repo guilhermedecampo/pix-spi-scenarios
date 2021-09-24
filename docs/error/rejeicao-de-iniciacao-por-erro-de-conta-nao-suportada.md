@@ -1,15 +1,15 @@
 ---
-sidebar_position: 4
+sidebar_position: 8
 ---
 
-# Erro AC06 - Rejeição de iniciação por conta encerrada
+# Erro AG03 - Rejeição de iniciação por conta encerrada
 
 Transação interrompida por erro de conta encerrada.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AC06;
+- **Código do Erro:** AG03;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
 - **Processada por:** 
@@ -66,7 +66,7 @@ Transação interrompida por erro de conta encerrada.
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AC06</Cd>
+            <Cd>AG03</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

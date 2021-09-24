@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 27
 ---
 
 # Erro DS27 - Rejeição de iniciação por erro ISPB inexistente
@@ -8,8 +8,8 @@ Participante não está cadastrado ou ainda não iniciou operação no SPI
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS27;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DS27
 - **Quem gera o erro:** SPI
 - **Enviada para:** Pagador
 

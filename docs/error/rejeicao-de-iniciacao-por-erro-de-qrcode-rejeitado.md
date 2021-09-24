@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 21
 ---
 
 # Erro BE17 - Rejeição de iniciação por QR Code rejeitado
@@ -8,11 +8,10 @@ Transação interrompida por erro de QR Code rejeitado pelo recebedor.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** BE17;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** BE17
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

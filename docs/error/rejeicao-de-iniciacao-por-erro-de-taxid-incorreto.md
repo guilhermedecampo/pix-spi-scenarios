@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 22
 ---
 
 # Erro CH11 - Rejeição de iniciação por CPF/CNPJ incorreto
@@ -8,11 +8,10 @@ Transação interrompida por erro de CPF/CNPJ incorreto do usuário recebedor.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** CH11;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** CH11
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

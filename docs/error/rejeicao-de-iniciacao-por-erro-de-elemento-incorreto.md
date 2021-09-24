@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 23
 ---
 
 # Erro CH16 - Rejeição de iniciação por elemento da mensagem incorreto
@@ -8,11 +8,10 @@ Transação interrompida por erro de elemento da mensagem incorreto.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** CH16;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** CH16
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

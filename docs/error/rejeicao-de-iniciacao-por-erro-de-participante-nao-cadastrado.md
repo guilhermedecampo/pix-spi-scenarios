@@ -1,18 +1,17 @@
 ---
-sidebar_position: 4
+sidebar_position: 27
 ---
 
-# Erro DS0G - Rejeição de iniciação por participante não cadastrado
+# Erro DS27 - Rejeição de iniciação por participante não cadastrado
 
 Transação interrompida por erro do participante que assinou a mensagem não é autorizado a realizar a operação na conta PI debitada. No caso em que o participante que assinou a mensagem não é o titular da conta PI debitada nem é o liquidante no SPI do participante do usuário pagador..
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS0G;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DS27
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -66,7 +65,7 @@ Transação interrompida por erro do participante que assinou a mensagem não é
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>DS0G</Cd>
+            <Cd>DS27</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

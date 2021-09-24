@@ -8,10 +8,10 @@ Transação interrompida por erro de número de conta transacional inexistente.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AC03;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AC03
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

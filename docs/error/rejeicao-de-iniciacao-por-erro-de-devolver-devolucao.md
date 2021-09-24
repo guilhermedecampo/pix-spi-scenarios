@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 10
 ---
 
 # Erro AG13 - Rejeição de iniciação por devolver devolução
@@ -8,11 +8,10 @@ Transação interrompida por erro de devolver a devolução
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AG13;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AG13
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

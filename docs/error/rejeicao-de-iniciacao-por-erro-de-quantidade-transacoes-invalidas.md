@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 17
 ---
 
 # Erro AM18 - Rejeição de iniciação por quantidade de transações inválidas
@@ -8,11 +8,10 @@ Transação interrompida por erro quantidade de transações por mensagem. Cada 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AM18;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AM18
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 36
 ---
 
 # Erro SL02 - Rejeição de iniciação por não relação entre transação original e os serviços Pix Saque ou Pix Troco
@@ -8,11 +8,10 @@ Transação interrompida por erro de ão relação entre transação original e 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** SL02;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** SL02
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

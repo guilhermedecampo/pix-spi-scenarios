@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 28
 ---
 
 # Erro DT02 - Rejeição de iniciação por data e hora do envio inválida
@@ -8,11 +8,10 @@ Transação interrompida por erro de data e hora do envio inválida.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DT02;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DT02
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

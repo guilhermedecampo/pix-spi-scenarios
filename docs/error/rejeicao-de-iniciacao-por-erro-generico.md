@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 30
 ---
 
 # Erro ED05 - Rejeição de iniciação por erro genérico
@@ -8,11 +8,10 @@ Transação interrompida por erro no processamento do pagamento instantâneo (er
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** ED05;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** ED05
+- **Quem gera o erro:** SPI/Recebedor
+- **Processada por:** Pagador
 
 ### PACS.002
 

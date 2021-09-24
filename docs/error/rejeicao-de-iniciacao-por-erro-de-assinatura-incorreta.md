@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 25
 ---
 
 # Erro DS0G - Rejeição de iniciação por assinatura incorreta
@@ -8,11 +8,10 @@ Transação interrompida por erro do participante que assinou a mensagem não é
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS0G;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DS0G
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

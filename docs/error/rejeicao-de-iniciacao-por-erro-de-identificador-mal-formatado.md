@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 32
 ---
 
 # Erro FF08 - Rejeição de iniciação por identificador mal formatado
@@ -8,11 +8,10 @@ Transação interrompida por erro do EndToEndId mal formatado.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** FF08;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** FF08
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

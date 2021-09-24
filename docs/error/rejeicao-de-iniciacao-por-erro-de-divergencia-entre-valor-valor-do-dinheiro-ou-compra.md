@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 16
 ---
 
 # Erro AM12 - Rejeição de iniciação por divergência entre somatória dos valores do bloco valorDoDinheiroOuCompra e valor
@@ -8,11 +8,10 @@ Transação interrompida por erro de somatória, pois a somatória deve resultar
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AM12;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AM12
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

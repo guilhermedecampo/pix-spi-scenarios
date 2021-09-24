@@ -1,18 +1,17 @@
 ---
-sidebar_position: 4
+sidebar_position: 24
 ---
 
-# Erro AG12 - Rejeição de iniciação por ordem rejeitada por recebedor
+# Erro DS04 - Rejeição de iniciação por ordem rejeitada por recebedor
 
 Transação interrompida por erro de ordem rejeitada por recebedor.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AG12;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DS04
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -66,7 +65,7 @@ Transação interrompida por erro de ordem rejeitada por recebedor.
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AG12</Cd>
+            <Cd>DS04</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

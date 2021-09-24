@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 31
 ---
 
 # Erro FF07 - Rejeição de iniciação por inconsistência finalidade e preenchimento do bloco structured
@@ -8,11 +8,10 @@ Transação interrompida por erro de Inconsistência entre a finalidade da trans
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** FF07;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** FF07
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

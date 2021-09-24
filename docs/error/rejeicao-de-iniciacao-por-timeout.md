@@ -8,10 +8,10 @@ Liquidação de transação interrompida por timeout no SPI
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AB03;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AB03
 - **Quem gera o erro:** SPI
-- **Enviada para:** Pagador ou Recebedor
+- **Processada por:** Pagador ou Recebedor
 
 ### PACS.002
 

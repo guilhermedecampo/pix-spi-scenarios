@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 19
 ---
 
 # Erro BE05 - Rejeição de iniciação por CNPJ do iniciador de pagamento não encontrado no arranjo Pix
@@ -8,11 +8,10 @@ Transação interrompida por erro de CNPJ do iniciadoor de pagamento não regist
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** BE05;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** BE05
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

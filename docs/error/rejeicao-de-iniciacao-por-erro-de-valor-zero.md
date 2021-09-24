@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 12
 ---
 
 # Erro AM01 - Rejeição de iniciação por valor zero
@@ -8,11 +8,10 @@ Transação interrompida por erro do valor transacionado ser zero.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AM01;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AM01
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 20
 ---
 
 # Erro BE15 - Rejeição de iniciação por código de situação de pagamento ou erro inválido
@@ -8,11 +8,10 @@ Transação interrompida por erro de código de situação de pagamento ou erro 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** BE15;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** BE15
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

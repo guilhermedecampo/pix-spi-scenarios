@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 13
 ---
 
 # Erro AM02 - Rejeição de iniciação por valor ser superior ao permitido
@@ -8,11 +8,10 @@ Transação interrompida por erro de valor ser superior ao valor permitido para 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AM02;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AM02
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

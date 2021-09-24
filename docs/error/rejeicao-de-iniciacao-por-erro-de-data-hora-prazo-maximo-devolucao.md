@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 29
 ---
 
 # Erro DT05 - Rejeição de iniciação por data e hora extrapola prazo máximo da devolução
@@ -8,11 +8,10 @@ Transação interrompida por erro de data e hora extrapolar prazo máximo da dev
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DT05;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DT05
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 34
 ---
 
 # Erro RC10 - Rejeição de iniciação por ISPB do recebedor inválido ou inexistente
@@ -8,11 +8,10 @@ Transação interrompida por erro de ISPB do recebedor inválido ou inexistente.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** RC10;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** RC10
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

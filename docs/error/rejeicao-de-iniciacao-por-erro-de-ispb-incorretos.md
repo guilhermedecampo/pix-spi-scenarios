@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 26
 ---
 
 # Erro DS0H - Rejeição de iniciação por ISPB incorretos
@@ -8,11 +8,10 @@ Transação interrompida por erro de o ISPB do participante que submeteu a respo
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** DS0H;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** DS0H
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

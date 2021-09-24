@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 15
 ---
 
 # Erro AM09 - Rejeição de iniciação por valor da devolução ser superior transação 
@@ -8,11 +8,10 @@ Transação interrompida por erro de devolução ser superior ao valor total da 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AM09;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AM09
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

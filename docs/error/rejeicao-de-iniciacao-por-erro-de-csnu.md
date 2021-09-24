@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 35
 ---
 
 # Erro RR04 - Rejeição de iniciação por sanção do usuário pagador
@@ -8,11 +8,10 @@ Transação interrompida por erro de Ordem de pagamento em que o usuário pagado
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** RR04;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** RR04
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

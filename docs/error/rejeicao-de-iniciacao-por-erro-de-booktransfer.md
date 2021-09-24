@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 9
 ---
 
 # Erro AG12 - Rejeição de iniciação por booktransfer
@@ -8,11 +8,10 @@ Transação interrompida por erro de booktransfer. Contas estão registradas na 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AG12;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AG12
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

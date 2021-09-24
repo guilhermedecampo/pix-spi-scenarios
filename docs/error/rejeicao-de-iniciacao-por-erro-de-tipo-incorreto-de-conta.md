@@ -1,18 +1,17 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 ---
 
-# Erro AG03 - Rejeição de iniciação por conta encerrada
+# Erro AC14 - Rejeição de iniciação por tipo incorreto conta transacional
 
-Transação interrompida por erro de conta encerrada.
+Transação interrompida por erro de tipo incorreto conta transacional.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AG03;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AC14
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 
@@ -66,7 +65,7 @@ Transação interrompida por erro de conta encerrada.
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AG03</Cd>
+            <Cd>AC14</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

@@ -8,10 +8,10 @@ Transação interrompida por erro de timeout no participante pagador. Esse timeo
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AB11;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AB11
 - **Quem gera o erro:** SPI
-- **Enviada para:** Recebedor
+- **Processada por:** Recebedor
 
 ### PACS.002
 

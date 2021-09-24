@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 18
 ---
 
 # Erro BE01 - Rejeição de iniciação por inconsistência entre CPF/CNPJ e conta transacional especificada
@@ -8,11 +8,10 @@ Transação interrompida por erro de inconsistência entre conta transacional e 
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** BE01;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** BE01
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

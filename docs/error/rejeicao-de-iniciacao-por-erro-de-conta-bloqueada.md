@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Erro AC06 - Rejeição de iniciação por conta bloqueada
@@ -8,10 +8,10 @@ Transação interrompida por erro de conta bloqueada.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AC06;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AC06
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

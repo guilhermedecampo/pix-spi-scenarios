@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 11
 ---
 
 # Erro AGNT - Rejeição de iniciação por participante direto não ser liquidante do usuário pagador ou recebedor
@@ -8,11 +8,10 @@ Transação interrompida por erro em que o participante direto não é liquidant
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AGNT;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AGNT
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

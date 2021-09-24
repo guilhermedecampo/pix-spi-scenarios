@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 14
 ---
 
 # Erro AM04 - Rejeição de iniciação por saldo insuficiente na conta PI
@@ -8,11 +8,10 @@ Transação interrompida por erro de saldo insuficiente na conta PI do participa
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AM04;
-- **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AM04
+- **Quem gera o erro:** SPI
+- **Processada por:** Pagador
 
 ### PACS.002
 

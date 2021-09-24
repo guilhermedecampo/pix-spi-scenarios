@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Erro AC07 - Rejeição de iniciação por conta encerrada
@@ -8,11 +8,10 @@ Transação interrompida por erro de conta encerrada.
 
 ## Regras
 
-- **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AC07;
+- **Mensagem utilizada:** PACS.002
+- **Código do Erro:** AC07
 - **Quem gera o erro:** Recebedor
-- **Enviada para:** SPI
-- **Processada por:** 
+- **Processada por:** Pagador
 
 ### PACS.002
 

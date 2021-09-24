@@ -12,7 +12,7 @@ Transação interrompida por erro de o ISPB do participante que submeteu a respo
 - **Código do Erro:** DS0H;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

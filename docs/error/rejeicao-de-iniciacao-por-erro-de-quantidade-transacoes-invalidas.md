@@ -12,7 +12,7 @@ Transação interrompida por erro quantidade de transações por mensagem. Cada 
 - **Código do Erro:** AM18;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

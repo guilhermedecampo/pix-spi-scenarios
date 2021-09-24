@@ -12,7 +12,7 @@ Transação interrompida por erro de Inconsistência entre a finalidade da trans
 - **Código do Erro:** FF07;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

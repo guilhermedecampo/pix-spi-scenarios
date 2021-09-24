@@ -12,7 +12,7 @@ Transação interrompida por erro de valor ser superior ao valor permitido para 
 - **Código do Erro:** AM02;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

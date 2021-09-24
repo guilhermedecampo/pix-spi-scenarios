@@ -12,7 +12,7 @@ Transação interrompida por erro de QR Code rejeitado pelo recebedor.
 - **Código do Erro:** BE17;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

@@ -12,7 +12,7 @@ Transação interrompida por erro de ISPB do pagador inválido ou inexistente.
 - **Código do Erro:** RC09;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

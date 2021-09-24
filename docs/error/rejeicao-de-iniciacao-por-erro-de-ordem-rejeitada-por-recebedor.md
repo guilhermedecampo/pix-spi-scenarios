@@ -12,7 +12,7 @@ Transação interrompida por erro de ordem rejeitada por recebedor.
 - **Código do Erro:** AG12;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

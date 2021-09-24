@@ -12,7 +12,7 @@ Transação interrompida por erro do valor transacionado ser zero.
 - **Código do Erro:** AM01;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

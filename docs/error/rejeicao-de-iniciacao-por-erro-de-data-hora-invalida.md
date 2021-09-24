@@ -12,7 +12,7 @@ Transação interrompida por erro de data e hora do envio inválida.
 - **Código do Erro:** DT02;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

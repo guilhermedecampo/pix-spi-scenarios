@@ -12,7 +12,7 @@ Transação interrompida por erro do participante que assinou a mensagem não é
 - **Código do Erro:** DS0G;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

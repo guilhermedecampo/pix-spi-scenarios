@@ -12,7 +12,7 @@ Transação interrompida por erro de devolução ser superior ao valor total da 
 - **Código do Erro:** AM09;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

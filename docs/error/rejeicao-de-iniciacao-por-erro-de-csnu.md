@@ -2,14 +2,14 @@
 sidebar_position: 4
 ---
 
-# Erro AGNT - Rejeição de iniciação por participante direto não ser liquidante do usuário pagador ou recebedor
+# Erro RR04 - Rejeição de iniciação por sanção do usuário pagador
 
-Transação interrompida por erro em que o participante direto não é liquidante.
+Transação interrompida por erro de Ordem de pagamento em que o usuário pagador é sancionado por resolução do Conselho de Segurança das Nações Unidas (CSNU). Nos casos em que o usuário recebedor for o sancionado, a ordem de pagamento não deve ser rejeitada.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AGNT;
+- **Código do Erro:** RR04;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
 - **Processada por:** 
@@ -66,7 +66,7 @@ Transação interrompida por erro em que o participante direto não é liquidant
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AGNT</Cd>
+            <Cd>RR04</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

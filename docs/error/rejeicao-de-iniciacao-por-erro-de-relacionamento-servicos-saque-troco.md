@@ -2,14 +2,14 @@
 sidebar_position: 4
 ---
 
-# Erro AGNT - Rejeição de iniciação por participante direto não ser liquidante do usuário pagador ou recebedor
+# Erro SL02 - Rejeição de iniciação por não relação entre transação original e os serviços Pix Saque ou Pix Troco
 
-Transação interrompida por erro em que o participante direto não é liquidante.
+Transação interrompida por erro de ão relação entre transação original e os serviços Pix Saque ou Pix Troco.
 
 ## Regras
 
 - **Mensagem utilizada:** PACS.002;
-- **Código do Erro:** AGNT;
+- **Código do Erro:** SL02;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
 - **Processada por:** 
@@ -66,7 +66,7 @@ Transação interrompida por erro em que o participante direto não é liquidant
         <StsRsnInf>	
           <Rsn>
             <!-- Razão do erro -->
-            <Cd>AGNT</Cd>
+            <Cd>SL02</Cd>
           </Rsn>
           <AddtlInf>"mensagem de erro"</AddtlInf>
         </StsRsnInf>	

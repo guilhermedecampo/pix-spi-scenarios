@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Erro DS0G - Rejeição de iniciação por assinatura incorreta
+# Erro DS0G - Rejeição de iniciação por participante não cadastrado
 
 Transação interrompida por erro do participante que assinou a mensagem não é autorizado a realizar a operação na conta PI debitada. No caso em que o participante que assinou a mensagem não é o titular da conta PI debitada nem é o liquidante no SPI do participante do usuário pagador..
 
@@ -12,7 +12,7 @@ Transação interrompida por erro do participante que assinou a mensagem não é
 - **Código do Erro:** DS0G;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

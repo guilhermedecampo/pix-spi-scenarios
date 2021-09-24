@@ -12,7 +12,7 @@ Transação interrompida por erro de conta encerrada.
 - **Código do Erro:** AC07;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

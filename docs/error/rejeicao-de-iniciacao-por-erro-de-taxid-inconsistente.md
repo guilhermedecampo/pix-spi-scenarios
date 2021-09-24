@@ -12,7 +12,7 @@ Transação interrompida por erro de inconsistência entre conta transacional e 
 - **Código do Erro:** BE01;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

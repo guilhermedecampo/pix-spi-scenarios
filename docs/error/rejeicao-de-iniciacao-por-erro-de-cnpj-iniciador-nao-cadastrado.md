@@ -12,7 +12,7 @@ Transação interrompida por erro de CNPJ do iniciadoor de pagamento não regist
 - **Código do Erro:** BE05;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

@@ -12,7 +12,7 @@ Transação interrompida por erro de saldo insuficiente na conta PI do participa
 - **Código do Erro:** AM04;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

@@ -12,7 +12,7 @@ Transação interrompida por erro de somatória, pois a somatória deve resultar
 - **Código do Erro:** AM12;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

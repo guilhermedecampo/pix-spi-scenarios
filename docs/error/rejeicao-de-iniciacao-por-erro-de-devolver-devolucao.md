@@ -12,7 +12,7 @@ Transação interrompida por erro de devolver a devolução
 - **Código do Erro:** AG13;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

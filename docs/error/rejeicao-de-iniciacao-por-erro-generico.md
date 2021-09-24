@@ -12,7 +12,7 @@ Transação interrompida por erro no processamento do pagamento instantâneo (er
 - **Código do Erro:** ED05;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

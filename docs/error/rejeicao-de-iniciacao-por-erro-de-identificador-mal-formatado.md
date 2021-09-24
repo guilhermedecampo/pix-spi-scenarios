@@ -12,7 +12,7 @@ Transação interrompida por erro do EndToEndId mal formatado.
 - **Código do Erro:** FF08;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

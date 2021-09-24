@@ -12,7 +12,7 @@ Transação interrompida por erro de conta encerrada.
 - **Código do Erro:** AG03;
 - **Quem gera o erro:** Recebedor
 - **Enviada para:** SPI
-- **Processada por 
+- **Processada por:** 
 
 ### PACS.002
 

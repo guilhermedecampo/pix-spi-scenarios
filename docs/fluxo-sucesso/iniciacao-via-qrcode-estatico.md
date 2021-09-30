@@ -34,9 +34,9 @@ sequenceDiagram
   DICT -->>Participante Pagador: Retorna dados da chave para análise e criação da mensagem
   Participante Pagador->>SPI: Verifica prioridade, Bloqueia saldos e envia PACS.008
   SPI->>Participante Recebedor: Bloqueia saldos e envia PACS.008
-  Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002(ACCC)
+  Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002(ACSP)
   par Paralelo
-    SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002(ACSP)
+    SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002(ACCC)
   and
     SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002(ACSC)
   end

@@ -39,11 +39,11 @@ autonumber
 Usuário Recebedor->>Participante Recebedor: Envia valor da devolução
 Participante Recebedor->>SPI: Verifica prioridade, Bloqueia saldos e envia PACS.004
 SPI->>Participante Pagador: Bloqueia saldos e envia PACS.004
-Participante Pagador-->>SPI: Valida conta, anota crédito e envia PACS.002(ACCC)
+Participante Pagador-->>SPI: Valida conta, anota crédito e envia PACS.002(ACSP)
 par Paralelo
-    SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002(ACSP)
+    SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002(ACCC)
 and
-    SPI-->>Participante Recebedor: Ajusta saldo e envia PACS.002(ACSC)
+    SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002(ACSC)
 end
 Participante Recebedor-->>Usuário Recebedor: Envia confirmação de sucesso
 Participante Pagador->>Usuário Pagador: Envia confirmação de sucesso

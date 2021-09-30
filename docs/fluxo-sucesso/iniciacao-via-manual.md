@@ -11,8 +11,8 @@ Nesse tipo de iniciação os dados da conta do recebedor são conhecidos.
 - **Usuário Pagador->>Participante Pagador:** Envia dados completos do pagamento
 - **Participante Pagador->>SPI:** Verifica prioridade, Bloqueia saldos e envia PACS.008
 - **SPI->>Participante Recebedor:** Bloqueia saldos e envia PACS.008
-- **Participante Recebedor-->>SPI:** Valida conta, anota crédito e envia PACS.002(ACCC)
-- **Paralelo - SPI-->>Participante Recebedor:** Ajusta saldo e envia PACS.002(ACSP) 
+- **Participante Recebedor-->>SPI:** Valida conta, anota crédito e envia PACS.002(ACSP)
+- **Paralelo - SPI-->>Participante Recebedor:** Ajusta saldo e envia PACS.002(ACCC) 
 - **Paralelo - SPI-->>Participante Pagador:** Ajusta saldo e envia PACS.002(ACSC)
 - **Participante Pagador-->>Usuário Pagador:** Envia confirmação de sucesso
 - **Participante Recebedor->>Usuário Recebedor:** Envia confirmação de sucesso

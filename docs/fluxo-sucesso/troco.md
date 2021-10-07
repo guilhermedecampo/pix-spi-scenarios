@@ -10,8 +10,8 @@ O campo opcional **valor.retirada.troco** indica que é um Pix Troco.
 
 Ao ler o QR Code o objeto **valor** vem com algumas propriedades importantes para a criação da mensagem PACS.008. Abaixo está o mapeamento:
 
-**valor.retirada.troco.modalidadeAgente**: "<Strd><RfrdDocInf><Tp><CdOrPrtry><Prtry>"
-**valor.retirada.troco.prestadorDoServicoDeSaque**: "<Strd><RfrdDocInf><Tp><Issr>"
+**valor.retirada.troco.modalidadeAgente**: `<Strd><RfrdDocInf><Tp><CdOrPrtry><Prtry>`
+**valor.retirada.troco.prestadorDoServicoDeSaque**: `<Strd><RfrdDocInf><Tp><Issr>`
 
 ## Etapas
 

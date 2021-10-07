@@ -12,8 +12,8 @@ Ao ler o QR Code Dinâmico: o campo opcional **valor.retirada.saque** indica que
 
 Ao ler o QR Code o objeto **valor** vem com algumas propriedades importantes para a criação da mensagem PACS.008. Abaixo está o mapeamento:
 
-**valor.retirada.saque.modalidadeAgente**: "<Strd><RfrdDocInf><Tp><CdOrPrtry><Prtry>"
-**valor.retirada.saque.prestadorDoServicoDeSaque**: "<Strd><RfrdDocInf><Tp><Issr>"
+**valor.retirada.saque.modalidadeAgente**: `<Strd><RfrdDocInf><Tp><CdOrPrtry><Prtry>`
+**valor.retirada.saque.prestadorDoServicoDeSaque**: `<Strd><RfrdDocInf><Tp><Issr>`
 
 ## Etapas
 

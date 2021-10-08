@@ -111,6 +111,8 @@ Mensagens com comentários de cada elemento do xml
           <!-- ID end to end regras estão descritas no documento "Comunicação SPI"
              esse id será utilizado para fazer o match entre diferentes mensagens -->
           <EndToEndId>E00000000000000000000000000</EndToEndId>
+          <!-- idConciliacaoRecebedor -->
+          <TxId>0000000000000000000000000</TxId>
         </PmtId>
         <!-- Valor da transação atributo BRL obrigatório é o valor total da transação -->
         <IntrBkSttlmAmt Ccy="BRL">666.88</IntrBkSttlmAmt>

@@ -28,7 +28,7 @@ Para facilitar o entendimento da integração com o SPI as partes referentes às
 - **Participante Recebedor-->>SPI:** Valida conta, anota crédito e envia PACS.002(ACSP)
 - **Paralelo - SPI-->>Participante Recebedor:** Ajusta saldo e envia PACS.002(ACCC)
 - **Paralelo - SPI-->>Participante Pagador:** Ajusta saldo e envia PACS.002(ACSC)
-- **Participante Pagador-->>ITP:** Polling acontece aqui para verificar o status do pagamento
+- **Participante Pagador-->>ITP:** Polling para verificar o status do pagamento
 - **Participante Pagador-->>Usuário Pagador:** Envia confirmação de sucesso
 - **Participante Recebedor->>Usuário Recebedor:** Envia confirmação de sucesso
 
@@ -37,7 +37,7 @@ Para facilitar o entendimento da integração com o SPI as partes referentes às
 ```mermaid
 sequenceDiagram
 autonumber
-Usuário Pagador->>Participante Pagador: Envia dados completos do pagamento
+ITP->>Participante Pagador:** Envia dados do pagamento
 Participante Pagador->>SPI: Verifica prioridade, Bloqueia saldos e envia PACS.008
 SPI->>Participante Recebedor: Bloqueia saldos e envia PACS.008
 Participante Recebedor-->>SPI: Valida conta, anota crédito e envia PACS.002(ACSP)
@@ -46,6 +46,7 @@ par Paralelo
 and
     SPI-->>Participante Pagador: Ajusta saldo e envia PACS.002(ACSC)
 end
+Participante Pagador->>ITP: Polling para verificar o status do pagamento
 Participante Pagador-->>Usuário Pagador: Envia confirmação de sucesso
 Participante Recebedor->>Usuário Recebedor: Envia confirmação de sucesso
 ```

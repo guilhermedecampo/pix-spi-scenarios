@@ -117,6 +117,8 @@ Mensagens com comentários de cada elemento do xml
                <!-- ID end to end regras estão descritas no documento "Comunicação SPI"
              esse id será utilizado para fazer o match entre diferentes mensagens -->
                <EndToEndId>E00000000000000000000000000</EndToEndId>
+               <!-- Utilizado para INIC, QRDN e QRES  -->
+               <TxId>0000000000000000000000000</TxId>
             </PmtId>
             <!-- Valor da transação atributo BRL obrigatório é o valor total da transação -->
             <IntrBkSttlmAmt Ccy="BRL">666.88</IntrBkSttlmAmt>
@@ -127,12 +129,13 @@ Mensagens com comentários de cada elemento do xml
             <MndtRltdInf>
                <Tp>
                   <LclInstrm>
-                     <!-- TIPO de iniciação MANU (manual inserindo dados ag/cc taxId etc) 
-              DICT (usando chaves, condiciona a prop Proxy a obrigatoriedade), 
-              INIC (por iniciador de pagamentos, já possui informações do recebedor, condiciona a prop Proxy a obrigatoriedade) 
-              QRDN (usando QR Code dinâmico, condiciona a prop Proxy a obrigatoriedade) e 
-              QRES (usando QR Code estático, condiciona a prop Proxy a obrigatoriedade) -->
-                     <Prtry>MANU</Prtry>
+                     <!-- TIPO de iniciação 
+                    MANU (manual inserindo dados ag/cc taxId etc) 
+                    DICT (usando chaves, condiciona a prop Proxy a obrigatoriedade), 
+                    INIC (por iniciador de pagamentos, já possui informações do recebedor, condiciona a prop Proxy a obrigatoriedade) 
+                    QRDN (usando QR Code dinâmico, condiciona a prop Proxy a obrigatoriedade) e 
+                    QRES (usando QR Code estático, condiciona a prop Proxy a obrigatoriedade) -->
+                     <Prtry>INIC</Prtry>
                   </LclInstrm>
                </Tp>
             </MndtRltdInf>
